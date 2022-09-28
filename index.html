@@ -1,1 +1,48 @@
-<h1>hellow</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.header {
+ display: flex;
+ width: 100%;
+ height: 100px;
+
+ background: skyblue;
+
+}
+h1 {
+ margin-left: 660px; 
+}
+.content {
+    margin-top: 50px;
+    background-color: pink;
+    width: 100%;
+    height: 1000px
+}
+.text {
+    background-color: green;
+  
+}
+p {
+     font-size: large;  
+     font-weight: 100; 
+    }
+    </style>
+</head>
+<body>
+  <div class="header"><h1>欢迎来到我的blog~</h1></div>
+
+  <div class="content">
+      <h3>后台管理权限的实现</h3>
+      <div class="text">
+      <p>
+登录时后台返回一个token，token登录进去后会存到cookie，然后登录进去跳首页的时候，前置路由守卫会判断是否有这个token，如果有token，做一套逻辑，去拉这个路由表，把菜单路由表拉回来，再用addroutes动态的添加到里面去，最后存到vuex里面，state里面，再在布局页面再把这个数据拿出来循环遍历生产菜单。
+      </p></div>
+  </div>
+</body>
+</html>
